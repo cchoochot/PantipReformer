@@ -1,0 +1,188 @@
+@font-face {
+	font-family: Laksaman;
+	src:
+		local('Laksaman'),
+		url('chrome-extension://__MSG_@@extension_id__/fonts/Laksaman.ttf');
+}
+
+#main-body-content {
+	font-family: Laksaman;
+    font-size: .8em;
+	text-shadow: 0 0 0.1px;
+}
+
+.samgee .logo-banner.doodle-banner {
+	background-attachment: fixed !important;
+}
+
+.samgee .post-item .post-item-title a:link:hover {
+	color: #E5C700;
+	text-decoration: none;
+	
+}
+
+#main-body-content .p45b-container {
+	display: none;
+}
+
+/*.timeline-show .timeline-post-list .post-pick a:hover {*/
+/*
+a:hover * {
+	color: #E5C700 !important;
+	text-decoration: none;
+}
+*/
+/*
+.samgee .post-item:hover {
+	background-color: #E5C700;
+}
+*/
+
+
+/* tag in post */
+.samgee .display-post-tag-wrapper .tag-item {
+	border-radius: 5px;
+	/*
+	transition: all .25s;
+	*/
+}
+
+.samgee .display-post-tag-wrapper .tag-item:hover {
+	background-color: #ffdea0 !important;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* fadeIn on load */
+#main-body-content {
+	animation: fadein .5s;
+}
+
+
+/* hide announcement */
+.col-sidebar-top, .top-main-left {
+	/*display: none;*/
+}
+
+
+/* shaking emoticons */
+/* ref: https://codepen.io/sdras/pen/aOgMON */
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.img-in-emotion:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 500px;
+}
+
+
+
+/* hide footer relate posts */
+.related-post {
+	display: none;
+}
+
+#main-body-content.samgee .content {
+	margin-bottom: 0px;
+}
+
+
+
+/* remove all borders */
+#main-body-content.samgee .col-main-inner,
+#main-body-content.samgee .display-post-wrapper.main-post .main-post-inner,
+#main-body-content.samgee .display-post-status-leftside,
+#main-body-content.samgee .emotion-vote-list,
+#main-body-content.samgee .review-section {
+	border: none;
+}
+
+
+
+/* color on hover list */
+#main-body-content.samgee .post-item:hover, .samgee .post-item:hover * {
+	background: darkslateblue !important;
+}
+
+
+/* hide sidebar */
+#index-sidebar {
+	display: none;
+}
+
+
+/* hide events */
+.col-event {
+	display: none;
+}
+
+/* hide admin message */
+.admin-post-list-wrapper {
+	display: none;
+}
+
+
+/* add OP post padding bottom */
+.samgee .display-post-wrapper.main-post .main-post-inner {
+	padding-bottom: 2px;
+}
+
+
+/* fix edit history text */
+.edit-history em {
+	vertical-align: middle;
+}
+
+
+/* fix emo vote box */
+#main-body-content.samgee .emotion-vote-list {
+	margin-top: 1.5em;
+}
+
+
+
+/* hide all comments on load */
+/*
+#comments-jsrender {
+	display: none;
+}
+*/
+#main-body-content > div.content > div > div > div.display-post-wrapper.pageno-title.pageno-title-counter {
+	cursor: pointer;
+	text-align: center;
+}
+
+#comments-counts {
+	cursor: pointer;
+}
+
+#comment-counter {
+	text-align:center;
+}
+
+
+/* adjust post title */
+#main-body-content .display-post-title {
+	margin-bottom: 0.5em;
+}
