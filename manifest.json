@@ -1,9 +1,9 @@
 {
 	"name": "Pantip Reformer",
 	"short_name": "Pantip Reformer",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"manifest_version": 2,
-	"description": "Adjust Pantip user interface.",
+	"description": "Fine-tune Pantip user interface.",
 	"homepage_url": "https://github.com/cchoochot/PantipReformer",
 	"web_accessible_resources": [
 		"fonts/*.*"
