@@ -1,21 +1,26 @@
 @font-face {
 	font-family: Laksaman;
-	src:
-		local('Laksaman'),
-		url('chrome-extension://__MSG_@@extension_id__/fonts/Laksaman.ttf');
+	src: url('chrome-extension://__MSG_@@extension_id__/fonts/Laksaman.ttf');
+}
+
+/* fadeIn on load */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 #main-body-content {
 	font-family: Laksaman;
     font-size: .8em;
 	text-shadow: 0 0 0.1px;
+	animation: fadein .5s;
 }
 
-.samgee .logo-banner.doodle-banner {
+.logo-banner.doodle-banner {
 	background-attachment: fixed !important;
 }
 
-.samgee .post-item .post-item-title a:link:hover {
+.post-item .post-item-title a:link:hover {
 	color: #E5C700;
 	text-decoration: none;
 	
@@ -38,35 +43,27 @@ a:hover * {
 }
 */
 
+iframe {
+	display: none;
+}
+
 
 /* tag in post */
 .samgee .display-post-tag-wrapper .tag-item {
 	border-radius: 5px;
-	/*
-	transition: all .25s;
-	*/
+	/* transition: all .25s; */
 }
 
 .samgee .display-post-tag-wrapper .tag-item:hover {
 	background-color: #ffdea0 !important;
 }
 
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* fadeIn on load */
-#main-body-content {
-	animation: fadein .5s;
-}
-
-
 /* hide announcement */
+/*
 .col-sidebar-top, .top-main-left {
-	/*display: none;*/
+	display: none;
 }
+*/
 
 
 /* shaking emoticons */
@@ -117,7 +114,6 @@ a:hover * {
 #main-body-content.samgee .review-section {
 	border: none;
 }
-
 
 
 /* color on hover list */

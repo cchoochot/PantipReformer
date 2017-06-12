@@ -2,23 +2,21 @@
 (function (document) {
 	'use strict';
 
-	var processFunc = function () {
-		document.addEventListener("DOMContentLoaded", function(event) {
-			var comments = document.getElementById('comments-jsrender');
-			var replybox = document.querySelector('.comment-bar');
+	document.addEventListener("DOMContentLoaded", (e) => {
+		// remove all iframe - commented to prevent its performance degradation
+		//[...document.getElementsByTagName("iframe")].forEach((node) => node.parentNode.removeChild(node));
 
+		var comments = document.getElementById('comments-jsrender');
+
+		if (!!comments) {
 			comments.classList.toggle('disappear');
-			replybox.classList.toggle('disappear');
-			
-			document.getElementById('comments-counts').onclick = function(e) {
-				comments.classList.toggle('disappear');
-			};
-			
-			comments.nextElementSibling.onclick = function(e) {
+			document.getElementById('comments-counts').onclick = (e) => comments.classList.toggle('disappear');
+
+			var replybox = document.getElementsByClassName('comment-bar')[0];
+			if (!!replybox) {
 				replybox.classList.toggle('disappear');
-			};
-		});
-	};
-	
-	processFunc();
-}(document));
+				comments.nextElementSibling.onclick = (e) => replybox.classList.toggle('disappear');
+			}
+		}
+	});
+})(document);
