@@ -15,6 +15,10 @@ https://chrome.google.com/webstore/detail/pantip-reformer/jlomifhgfmbiekoiedfbah
 ## Built With
 * [Sarabun font](https://fonts.google.com/specimen/Sarabun) - replacement font
 
+## Packing
+Run the git archive command in terminal/command prompt.
+> git archive -o app.zip HEAD
+
 ## Authors
 * **Chakraphan Choochot** - *Initial work* - [CChoochot](https://github.com/cchoochot)
 
