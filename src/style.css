@@ -1,6 +1,5 @@
-@font-face {
-	font-family: Laksaman;
-	src: url('chrome-extension://__MSG_@@extension_id__/fonts/Laksaman.ttf');
+body, input, textarea, select, button {
+    font-family: Sarabun, sans-serif;
 }
 
 /* fadeIn on load */
@@ -10,9 +9,7 @@
 }
 
 #main-body-content {
-	font-family: Laksaman;
-    font-size: .8em;
-	text-shadow: 0 0 0.1px;
+	font-family: Sarabun, sans-serif;
 	animation: fadein .5s;
 }
 
@@ -29,24 +26,6 @@
 #main-body-content .p45b-container {
 	display: none;
 }
-
-/*.timeline-show .timeline-post-list .post-pick a:hover {*/
-/*
-a:hover * {
-	color: #E5C700 !important;
-	text-decoration: none;
-}
-*/
-/*
-.samgee .post-item:hover {
-	background-color: #E5C700;
-}
-*/
-
-iframe {
-	display: none;
-}
-
 
 /* tag in post */
 .samgee .display-post-tag-wrapper .tag-item {
@@ -93,8 +72,6 @@ iframe {
   perspective: 500px;
 }
 
-
-
 /* hide footer relate posts */
 .related-post {
 	display: none;
@@ -103,8 +80,6 @@ iframe {
 #main-body-content.samgee .content {
 	margin-bottom: 0px;
 }
-
-
 
 /* remove all borders */
 #main-body-content.samgee .col-main-inner,
@@ -181,4 +156,9 @@ iframe {
 /* adjust post title */
 #main-body-content .display-post-title {
 	margin-bottom: 0.5em;
+}
+
+
+.samgee .post-item.best-item .post-item-title {
+	line-height: 2;
 }

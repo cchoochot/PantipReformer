@@ -1,4 +1,23 @@
-# PantipReformer
-Adjust Pantip user interface
+# Pantip Reformer Chrome Extension
+Install this Chrome extension to adjust Pantip web look-and-feel.
 
-Published to https://chrome.google.com/webstore/detail/pantip-reformer/jlomifhgfmbiekoiedfbahjjhhkpjhdj?utm_source=chrome-app-launcher-info-dialog
+### Chrome Webstore Link
+https://chrome.google.com/webstore/detail/pantip-reformer/jlomifhgfmbiekoiedfbahjjhhkpjhdj
+
+## Features
+* Change default font to Sarabun
+* Add page fade transition
+* Remove borders
+* Emoticon shakes on mouse hover
+* Hide Ad posts
+* Miscellaneous style tunings
+
+## Built With
+* [Sarabun font](https://fonts.google.com/specimen/Sarabun) - replacement font
+
+## Authors
+* **Chakraphan Choochot** - *Initial work* - [CChoochot](https://github.com/cchoochot)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
