@@ -10,7 +10,7 @@ https://chrome.google.com/webstore/detail/pantip-reformer/jlomifhgfmbiekoiedfbah
 * Remove borders
 * Emoticon shakes on mouse hover
 * Hide Ad posts
-* Miscellaneous style tunings
+* Miscellaneous style tuning
 
 ## Built With
 * [Sarabun font](https://fonts.google.com/specimen/Sarabun) - replacement font
